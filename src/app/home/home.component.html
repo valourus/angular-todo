@@ -1,0 +1,15 @@
+<h1 [class.home]>Welcome Add Your ToDos here :')</h1>
+<div class="table-responsive">
+  <table class="table table-hover table-sm">
+    <tbody>
+    <tr>
+      <th class="w-25">#id</th>
+      <th class="w-50">Date</th>
+    </tr>
+    <tr *ngFor="let todo of todos" class="table-primary">
+      <td>{{todo.id}}</td>
+      <td>{{todo.text}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
